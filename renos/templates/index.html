@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+
+<!-- when Javascript css etc use: -->
+<!--{% load static %} --> 
+<html>
+	<head>
+		<title>Renos</title>
+		<!--
+		<link rel="stylesheet" href="{% static "css/base.css" %}" />
+        <script src="{% static "js/jquery.js" %}"></script>  --> 
+	</head>
+	<body>
+		<header>{{header}}</header>
+		<img src="{% static "images/Tux.png" %}" alt="Mr. Linux" />
+		<img src="/static/images/Tux.png" alt="Mr. Linux" />
+		<section>{{helloMsg}}</section>
+	</body>
+</html>
