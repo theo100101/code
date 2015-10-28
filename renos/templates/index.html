@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-{% load static from staticfiles %}
+{% load staticfiles %}
 
 <!-- when Javascript css etc use: -->
 <!--{% load static %} --> 
 <html>
+	<meta charset="utf-8" />
 	<head>
 		<title>Renos</title>
 		<!--
@@ -12,8 +13,8 @@
 	</head>
 	<body>
 		<header>{{header}}</header>
-		<img src="{% static "images/Tux.png" %}" alt="Mr. Linux" />
-		<img src="/static/images/Tux.png" alt="Mr. Linux" />
+		<img src="{% static "/images/background.jpg" %}" alt="Mr. Linux" />
+		<img src="{{ STATIC_URL }}/static/images/Tux.png" alt="Mr. Linux" >
 		<section>{{helloMsg}}</section>
 	</body>
 </html>
