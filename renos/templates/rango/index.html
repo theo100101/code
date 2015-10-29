@@ -1,10 +1,23 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 	<head>
 		<title>Renos</title>
+		<link rel="stylesheet" href="{% static "css/style.css" %}" /> <!-- CSS -->
+        <script src="{% static "js/jquery.js" %}"></script> <!-- JavaScript -->
 	</head>
 	<body>
 		<header>{{header}}</header>
 		<section>{{helloMsg}}</section>
+		<div id="navigation-bar" class="nav">
+			<div class="container">
+				<ul>
+					<li><a href="/rango/home/">Home</a>
+					<li><a href="/rango/events/">Events</a>
+					<li><a href="/rango/follow/">Follow</a>
+					<li><a href="/rango/about/">About</a>
+				</ul>				
+			</div>
+		</div>
 	</body>
 </html>

@@ -76,6 +76,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder'
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
@@ -83,9 +87,9 @@ TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 STATIC_PATH = os.path.join(BASE_DIR,'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-STATIC_ROOT = '/home/trainee/Documents/code/renos/collectedstatic'
+STATIC_ROOT = ''
 STATIC_URL = '/static/'
-
+print os.path.join(BASE_DIR,'static')
 TEMPLATE_DIRS = (
     TEMPLATE_PATH,
 )
